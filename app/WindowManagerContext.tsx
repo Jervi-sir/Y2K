@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 
-const WindowManagerContext = createContext();
+const WindowManagerContext = createContext(null);
 
 export const WindowManagerProvider = ({ children }) => {
   const [zIndexes, setZIndexes] = useState({});
