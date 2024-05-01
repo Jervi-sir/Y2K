@@ -1,0 +1,26 @@
+/* Custom styles for resize handles */
+.react-resizable-handle {
+  background: #333;  /* Change handle color */
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Customize cursors for different directions */
+.react-resizable-handle-s {
+  cursor: s-resize;  /* Cursor for south handle */
+}
+
+.react-resizable-handle-e {
+  cursor: e-resize;  /* Cursor for east handle */
+}
+
+.react-resizable-handle-se {
+  cursor: se-resize;  /* Cursor for southeast handle */
+  bottom: 0;
+  right: 0;
+  background: #333 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 3 3"><path d="M0 0 L3 0 L0 3 Z" fill="white" /></svg>') no-repeat center center;
+  background-size: 8px;
+}
